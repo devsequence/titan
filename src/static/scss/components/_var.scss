@@ -1,0 +1,54 @@
+// font
+$font-family-primary: 'Lufga';
+$font-family-secondary: 'Mont';
+
+$font-h1: 700 96rem / 100% $font-family-primary;
+$font-h2: 700 48rem / 100% $font-family-primary;
+$font-h3: 700 36rem / 100% $font-family-primary;
+$font-h4: 700 24rem / 100% $font-family-primary;
+$font-h5: 700 18rem / 100% $font-family-primary;
+$font-h6: 700 16rem / 100% $font-family-primary;
+
+$font-bold-s: 700 24rem / 100% $font-family-primary;
+$font-main-regular: 400 24rem / 31rem $font-family-primary;
+$font-main-bold: 700 24rem / 31rem $font-family-primary;
+// general
+
+$white: #ffffff;
+$black: #000000;
+$black-100: #0F0F0F;
+$black-200: #242424;
+$black-300: #111;
+
+
+// main
+
+$primary: #EF4210;
+$secondary: #026A80;
+$default: #0A0A0A;
+$gray: #5C5C5C;
+$gray-100: #4D4D4D;
+$gray-200: #161616;
+$gray-300: #737373;
+$green: #007756;
+$light: #f2f2f2;
+$red: #DE3F53;
+
+// info
+
+$danger: #f00;
+$success: #00b911;
+$info: #26badf;
+$warning: #fbf8db;
+
+// shades
+
+
+
+// mixins
+
+@mixin linear-gradient($direction, $fromColor, $toColor) {
+  background-color: $fromColor;
+  background-image: linear-gradient($direction, $fromColor, $toColor);
+}
+

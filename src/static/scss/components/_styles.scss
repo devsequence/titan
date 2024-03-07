@@ -1,0 +1,198 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 14rem;
+  font-family: $font-family-primary;
+  color: $default;
+  background-color: $white;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+  &.is-scroll{
+    overflow: hidden;
+  }
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-family-primary;
+}
+//h1 {
+//  font-size: 38px;
+//  line-height: 38px;
+//  color: $default;
+//}
+//
+//h2 {
+//  font-size: 32px;
+//  line-height: 32px;
+//  color: $default;
+//}
+//
+//h3 {
+//  font-size: 18px;
+//  line-height: 26px;
+//  color: $default;
+//}
+//
+//h4 {
+//  font-size: 16px;
+//  line-height: 28px;
+//  color: $default;
+//}
+//
+//h5 {
+//  font-size: 16px;
+//  line-height: 26px;
+//  color: $default;
+//}
+//
+//h6 {
+//  font-size: 14px;
+//  line-height: 21px;
+//  color: $default;
+//}
+
+p {
+  font: $font-bold-s;
+  margin-bottom: 31rem;
+}
+
+img {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+section {
+  position: relative;
+  padding: 40px 0;
+  z-index: 1;
+}
+
+.section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.row.min {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.row.min > div[class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+span,
+.icon {
+  transition: all 150ms ease;
+}
+button{
+  cursor: pointer;
+}
+.wysiwyg{
+  font-size: 16px;
+  line-height: 24px;
+  color: $default;
+  p{
+    font-size: 16px;
+    line-height: 24px;
+    color: $default;
+    margin-bottom: 16px;
+  }
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.btn-primary{
+  width: 100%;
+  max-width: 428rem;
+  padding: 23rem 4rem;
+  font: 700 16rem / 24rem $font-family-primary;
+  color: $white;
+  background: $primary;
+  border-radius: 50rem;
+  border: 1rem solid $primary;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16rem;
+  position: relative;
+  overflow: hidden;
+  transition: all ease 300ms;
+  img, svg{
+    width: 24rem;
+    height: 24rem;
+  }
+  svg{
+    fill: $white;
+  }
+  .circle{
+    position: absolute;
+    background: $white;
+    opacity: .6;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: all ease 300ms;
+    &.active{
+      width: 60rem;
+      height: 60rem;
+    }
+    &.desplode-circle{
+      width: 0;
+      height: 0;
+    }
+  }
+}
+.btn-secondary{
+  width: 100%;
+  max-width: 428rem;
+  padding: 23rem 4rem;
+  font: 700 16rem / 24rem $font-family-primary;
+  color: $default;
+  background: $white;
+  border-radius: 50rem;
+  border: 1rem solid $white;
+  text-align: center;
+  text-transform: uppercase;
+}
