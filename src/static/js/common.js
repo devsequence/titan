@@ -10,7 +10,16 @@ $(".btn-primary, .btn-secondary").each((function (e) {
         t.find(".circle")
             .removeClass("active")
     }))
-}))
+}));
+for(var i=10; i<100; i++){
+    var htmlInner = '<span>'+i+'</span>';
+    $('.preload-list li').append(htmlInner);
+
+}
+
+
+
+
 
 // if ($('.hero-wrapper').length > 0) {
 //     $('.header').addClass('header-main');

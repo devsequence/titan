@@ -9,7 +9,12 @@ $font-h4: 700 24rem / 100% $font-family-primary;
 $font-h5: 700 18rem / 100% $font-family-primary;
 $font-h6: 700 16rem / 100% $font-family-primary;
 
-$font-bold-s: 700 24rem / 100% $font-family-primary;
+$font-48: 400 48rem / 63rem $font-family-primary;
+$font-48-bold: 700 48rem / 63rem $font-family-primary;
+
+$font-64-bold: 700 64rem / 84rem $font-family-primary;
+
+$font-bold-s: 400 24rem / 31rem $font-family-primary;
 $font-main-regular: 400 24rem / 31rem $font-family-primary;
 $font-main-bold: 700 24rem / 31rem $font-family-primary;
 // general
@@ -30,6 +35,7 @@ $gray: #5C5C5C;
 $gray-100: #4D4D4D;
 $gray-200: #161616;
 $gray-300: #737373;
+$gray-400: #ACACAC;
 $green: #007756;
 $light: #f2f2f2;
 $red: #DE3F53;

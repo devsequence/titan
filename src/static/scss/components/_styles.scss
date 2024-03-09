@@ -173,7 +173,6 @@ input, textarea {
     width: 0;
     height: 0;
     border-radius: 50%;
-    transition: all ease 300ms;
     &.active{
       width: 60rem;
       height: 60rem;
@@ -195,4 +194,195 @@ input, textarea {
   border: 1rem solid $white;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  .circle{
+    position: absolute;
+    background: $default;
+    opacity: .6;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    &.active{
+      width: 60rem;
+      height: 60rem;
+    }
+    &.desplode-circle{
+      width: 0;
+      height: 0;
+    }
+  }
+}
+.preload{
+ position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  z-index: 100;
+  background: $default;
+  &-logo{
+    width: 412rem;
+    height: 381.79rem;
+    margin-bottom: 88rem;
+    overflow: hidden;
+    ul{
+      li{
+        display: flex;flex-wrap: wrap;
+        font: $font-main-regular;
+        color: $primary;
+        span{
+          display: inline-block;
+          width: auto;
+          min-width: 27rem;
+        }
+        &:nth-child(1){
+          height: 186.79rem;
+          clip-path: polygon( 49.242% 46.663%,0% 0.031%,0% 45.023%,60.59% 99.887%,60.59% 81.506%,100% 45.797%,100% 0%,49.242% 46.663% );
+        }
+        &:nth-child(2){
+          height: 265.2rem;
+          clip-path: polygon( 43.59% 63.964%,65.865% 76.755%,65.865% 99.749%,43.59% 99.749%,43.59% 63.964%,81.439% 47.061%,76.08% 43.972%,76.064% 43.972%,65.865% 38.12%,43.59% 25.307%,0% 0.225%,0% 0.399%,0.031% 28.005%,10.749% 34.161%,10.749% 99.923%,29.161% 99.923%,29.161% 44.755%,43.605% 53.065%,43.605% 53.087%,65.881% 65.878%,65.881% 65.9%,80.797% 74.471%,81.454% 74.841%,81.454% 99.771%,99.867% 99.771%,99.867% 11.058%,81.454% 19.608%,81.454% 47.061%,81.439% 47.061% );
+          transform: translate(0, -70rem);
+        }
+      }
+    }
+  }
+  .spinner {
+    width: 45.2rem;
+    height: 45.2rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .spinner.center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .spinner .spinner-blade {
+    position: absolute;
+    left: 21rem;
+    top: 32rem;
+    width: 3.8rem;
+    height: 10.8rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    transform-origin: center -10rem;
+    animation: spinner-fade9234 1s infinite linear;
+  }
+
+  .spinner .spinner-blade:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  .spinner .spinner-blade:nth-child(2) {
+    -webkit-animation-delay: 0.083s;
+    animation-delay: 0.083s;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+
+  .spinner .spinner-blade:nth-child(3) {
+    -webkit-animation-delay: 0.166s;
+    animation-delay: 0.166s;
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  .spinner .spinner-blade:nth-child(4) {
+    -webkit-animation-delay: 0.249s;
+    animation-delay: 0.249s;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .spinner .spinner-blade:nth-child(5) {
+    -webkit-animation-delay: 0.332s;
+    animation-delay: 0.332s;
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+
+  .spinner .spinner-blade:nth-child(6) {
+    -webkit-animation-delay: 0.415s;
+    animation-delay: 0.415s;
+    -webkit-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    transform: rotate(150deg);
+  }
+
+  .spinner .spinner-blade:nth-child(7) {
+    -webkit-animation-delay: 0.498s;
+    animation-delay: 0.498s;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .spinner .spinner-blade:nth-child(8) {
+    -webkit-animation-delay: 0.581s;
+    animation-delay: 0.581s;
+    -webkit-transform: rotate(210deg);
+    -ms-transform: rotate(210deg);
+    transform: rotate(210deg);
+  }
+
+  .spinner .spinner-blade:nth-child(9) {
+    -webkit-animation-delay: 0.664s;
+    animation-delay: 0.664s;
+    -webkit-transform: rotate(240deg);
+    -ms-transform: rotate(240deg);
+    transform: rotate(240deg);
+  }
+
+  .spinner .spinner-blade:nth-child(10) {
+    -webkit-animation-delay: 0.747s;
+    animation-delay: 0.747s;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+
+  .spinner .spinner-blade:nth-child(11) {
+    -webkit-animation-delay: 0.83s;
+    animation-delay: 0.83s;
+    -webkit-transform: rotate(300deg);
+    -ms-transform: rotate(300deg);
+    transform: rotate(300deg);
+  }
+
+  .spinner .spinner-blade:nth-child(12) {
+    -webkit-animation-delay: 0.913s;
+    animation-delay: 0.913s;
+    -webkit-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    transform: rotate(330deg);
+  }
+
+  @keyframes spinner-fade9234 {
+    0% {
+      background-color: $primary;
+    }
+
+    100% {
+      background-color: rgba($primary, .1);
+    }
+  }
 }

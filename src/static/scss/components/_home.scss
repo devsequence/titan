@@ -267,8 +267,10 @@
     height: 260rem;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     padding: 40rem 48rem;
+    margin-bottom: 32rem;
     position: relative;
     z-index: 1;
     clip-path: polygon( 0.057% 90.973%,0.057% 28.006%,0.057% 28.006%,0.059% 27.824%,0.065% 27.642%,0.074% 27.46%,0.087% 27.281%,0.103% 27.104%,0.122% 26.929%,0.145% 26.759%,0.17% 26.593%,0.199% 26.431%,0.23% 26.276%,0.23% 26.276%,0.23% 26.276%,0.23% 26.275%,0.23% 26.275%,0.23% 26.275%,0.23% 26.275%,0.23% 26.275%,0.23% 26.275%,0.23% 26.275%,0.23% 26.275%,0.23% 26.274%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.737% 1.345%,5.789% 1.137%,5.845% 0.949%,5.906% 0.778%,5.972% 0.628%,6.041% 0.499%,6.114% 0.391%,6.189% 0.306%,6.266% 0.243%,6.345% 0.206%,6.426% 0.193%,97.303% 0.193%,97.303% 0.193%,97.742% 0.31%,98.158% 0.651%,98.545% 1.197%,98.898% 1.93%,99.212% 2.83%,99.481% 3.881%,99.7% 5.064%,99.863% 6.36%,99.965% 7.752%,100% 9.22%,100% 76.528%,100% 78.295%,100% 78.295%,99.965% 79.763%,99.863% 81.155%,99.7% 82.451%,99.481% 83.633%,99.212% 84.684%,98.898% 85.585%,98.545% 86.318%,98.158% 86.864%,97.742% 87.204%,97.303% 87.322%,73.643% 87.322%,73.643% 87.322%,73.381% 87.363%,73.123% 87.484%,72.87% 87.683%,72.624% 87.958%,72.387% 88.307%,72.161% 88.728%,71.947% 89.219%,71.746% 89.777%,71.562% 90.401%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,71.394% 91.088%,69.963% 97.529%,69.963% 97.529%,69.81% 97.98%,69.647% 98.39%,69.477% 98.756%,69.298% 99.078%,69.113% 99.354%,68.922% 99.583%,68.725% 99.763%,68.524% 99.894%,68.32% 99.973%,68.112% 100%,2.754% 100%,2.754% 100%,2.315% 99.882%,1.9% 99.541%,1.512% 98.996%,1.159% 98.263%,0.845% 97.362%,0.576% 96.311%,0.357% 95.129%,0.194% 93.832%,0.093% 92.441%,0.057% 90.973% );
@@ -295,14 +297,170 @@
     }
   }
   &-icon{
-    width: 24rem;
-    height: 24rem;
+    width: 48rem;
+    height: 48rem;
     img{
-
+      width: 100%;
+      height: 100%;
     }
   }
   &-title{
     font: 700 48rem / 63rem $font-family-primary;
+    color: $primary;
+    max-width: 600rem;
+    text-align: right;
+
   }
-  &-subtitle{}
+  &-subtitle{
+    font: 700 24rem / 31rem $font-family-primary;
+    color: $white;
+    width: 100%;
+    max-width: 700rem;
+  }
+  &-text{
+    font: 400 24rem / 31rem $font-family-primary;
+    color: $gray;
+  }
+}
+.work{
+  padding: 72rem 0 72rem;
+  background: linear-gradient(135deg, rgba(237,236,236,1) 1%, rgba(240,236,236,1) 100%);
+  &-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-desc{
+    width: 100%;
+    max-width: 758rem;
+    position: relative;
+    &-icon{
+      position: absolute;
+      right: -320rem;
+      top: 130rem;
+      width: 428rem;
+      height: 508rem;
+      z-index: 3;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-title{
+    font: 700 48rem / 63rem $font-family-primary;
+    color: $primary;
+    margin-bottom: 8rem;
+    span{
+      font: 400 88rem / 100rem $font-family-primary;
+      color: $default;
+    }
+  }
+  &-subtitle{
+    font: 400 24rem / 31rem $font-family-primary;
+    color: $gray;
+    margin-bottom: 48rem;
+  }
+  &-text{
+    max-width: 576rem;
+    font: $font-main-regular;
+    color: $gray;
+    margin-bottom: 56rem;
+    b{
+      color: $default;
+    }
+  }
+  &-media{
+    position: relative;
+    width: 728rem;
+    height: 728rem;
+    clip-path: polygon( 0.486% 20.612%,0.484% 20.614%,0.481% 20.616%,0.481% 20.616%,0.407% 20.673%,0.339% 20.735%,0.278% 20.803%,0.225% 20.876%,0.178% 20.953%,0.14% 21.033%,0.109% 21.117%,0.087% 21.202%,0.073% 21.29%,0.069% 21.379%,0.069% 97.012%,0.069% 97.012%,0.111% 97.498%,0.233% 97.959%,0.428% 98.388%,0.69% 98.779%,1.012% 99.127%,1.389% 99.425%,1.812% 99.668%,2.276% 99.848%,2.773% 99.961%,3.299% 100%,96.137% 100%,96.77% 100%,96.77% 100%,97.295% 99.961%,97.793% 99.848%,98.257% 99.668%,98.68% 99.425%,99.056% 99.127%,99.379% 98.779%,99.641% 98.388%,99.836% 97.959%,99.958% 97.498%,100% 97.012%,100% 68.357%,100% 3.052%,100% 3.052%,99.958% 2.566%,99.836% 2.105%,99.641% 1.676%,99.379% 1.285%,99.056% 0.937%,98.68% 0.639%,98.257% 0.396%,97.793% 0.215%,97.295% 0.103%,96.77% 0.064%,25.416% 0.064%,25.416% 0.064%,25.351% 0.066%,25.286% 0.072%,25.221% 0.082%,25.157% 0.096%,25.094% 0.114%,25.032% 0.135%,24.971% 0.16%,24.912% 0.188%,24.855% 0.219%,24.799% 0.253%,0.486% 20.612% );
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+  }
+}
+.why{
+  padding: 0 0 144rem;
+  background: $default;
+  &-wrap{
+    padding: 100rem 70rem 100rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 50rem;
+    z-index: 2;
+    .bg{
+      top: 0;
+      right: 0;
+      border-radius: inherit;
+      position: absolute;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-180deg, rgba(51,16,6,1) 1%, rgba(118,39,16,1) 25%, rgba(239,66,16,1) 50%, rgba(251,172,149,1) 75%, rgba(255,218,207,1) 100%);
+    }
+    &:before{
+      background-color: $default;
+      content: '';
+      position: absolute;
+      border-radius: inherit;
+      left: 1rem;
+      right: 1rem;
+      top: 1rem;
+      bottom: 1rem;
+      z-index: -1;
+    }
+    &:after{
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: -40rem;
+      margin: 0 auto;
+      background-image: url("data:image/svg+xml,%3Csvg width='1728' height='313' viewBox='0 0 1728 313' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_f_142_23986)'%3E%3Cpath d='M1687.26 113.956C1715.88 178.646 1670.12 251.786 1599.43 254.348L864 281L128.572 254.348C57.881 251.786 12.1245 178.646 40.7428 113.956L50.6586 91.5425C66.672 55.3455 102.528 31.9999 142.109 31.9999L1585.89 32C1625.47 32 1661.33 55.3456 1677.34 91.5426L1687.26 113.956Z' fill='%23EF4210'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_142_23986' x='0.0927734' y='-0.00012207' width='1727.81' height='313' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='16' result='effect1_foregroundBlur_142_23986'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-size: cover;
+      width: 1596rem;
+      height: 289rem;
+      z-index: -3;
+    }
+  }
+  &-media{
+    width: 100%;
+    max-width: 598.3rem;
+    height: 554.4rem;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-desc{
+    max-width: 948rem;
+    width: 100%;
+    padding-left: 70rem;
+  }
+  &-title{
+    font: 700 48rem / 63rem $font-family-primary;
+    color: $white;
+    margin-bottom: 32rem;
+    span{
+      display: block;
+      font: 400 88rem / 88rem $font-family-primary;
+      color: $primary;
+    }
+  }
+  &-text{
+    b{
+      color: $white;
+      display: block;
+      margin-bottom: 24rem;
+    }
+    font: $font-main-regular;
+    color: $gray-400;
+  }
 }

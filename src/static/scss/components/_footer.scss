@@ -1,5 +1,127 @@
+.subscribe{
+  margin-bottom: 120rem;
+  &-title{
+    font: 700 24rem / 24rem $font-family-primary;
+    margin-bottom: 96rem;
+  }
+  &-form{
+    label{
+      width: 100%;
+    }
+    input{
+      color: $white;
+      font: 400 48rem / 24rem $font-family-primary;
+      padding-bottom: 40rem;
+      background: transparent;
+      width: 100%;
+      outline: none;
+      border: 0;
+      border-bottom: 1rem solid $white;
+    }
+  }
+}
 .footer{
   padding: 168rem 0 48rem;
   background-color: $gray-200;
   color: $white;
+  &-wrap{
+    &:last-of-type{
+      margin-top: 80rem;
+    }
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &-social, &-nav{
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+  &-social{
+    ul{
+      li{
+        margin-right: 16rem;
+        &:last-of-type{
+          margin-right: 0;
+        }
+      }
+      a{
+        border:1rem solid #4D4D4D;
+        border-radius: 4rem;
+        width: 40rem;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img, svg{
+          width: 100%;
+          height: 100%;
+          max-width: 32rem;
+          max-height: 32rem;
+          transition: all ease 300ms;
+        }
+        &:hover{
+          border-color: $primary;
+          svg{
+            path{
+              fill: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-nav{
+    ul{
+      li{
+        margin-right: 49px;
+        position: relative;
+        &:after{
+          position: absolute;
+          content: '';
+          right: -24rem;
+          top: 4rem;
+          height: 16rem;
+          width: 1rem;
+          background: $white;
+        }
+        &:last-of-type{
+          margin-right: 0;
+          &:after{
+            display: none;
+          }
+        }
+      }
+      a{
+        font: 400 16rem / 24rem $font-family-primary;
+        color: $white;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+  }
+  &-link{
+    a{
+      font: 700 16rem / 24rem $font-family-primary;
+      color: $primary;
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+  &-copy{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 56rem;
+    font: 400 16rem / 24rem $font-family-primary;
+  }
 }
