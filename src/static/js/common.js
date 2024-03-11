@@ -16,10 +16,42 @@ for(var i=10; i<100; i++){
     $('.preload-list li').append(htmlInner);
 
 }
+function popupOpen() {
+    var $popupButton = $('.btn-popup');
+    $popupButton.on('click', function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var popupButtonData = $this.data('popup');
+        $('.popup').removeClass('active');
+        $('div[data-popup = '+popupButtonData+']').addClass('active');
+        $('body').addClass('scroll');
+    });
+}
+popupOpen();
+$('.popup-close').on('click', function (e) {
+    var $this = $(this);
+    $this.parent().parent().removeClass('active');
+    $('.popup-overlay').removeClass('active');
+    $('body').removeClass('scroll');
+});
+$('.popup-overlay').on('click', function (e) {
+    var $this = $(this);
+    $this.removeClass('active');
+    $('.popup').removeClass('active');
+    $('body').removeClass('scroll');
+});
 
 
+$('.showHide').on('click', function (e) {
 
-
+    var x = $(".input-password");
+    if (x.attr('type') === "password") {
+        x.attr("type", "text")
+    } else {
+        x.attr("type", "password")
+    }
+    console.log(x.attr('type'));
+});
 
 // if ($('.hero-wrapper').length > 0) {
 //     $('.header').addClass('header-main');

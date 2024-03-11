@@ -5,6 +5,7 @@
     margin-bottom: 96rem;
   }
   &-form{
+    position: relative;
     label{
       width: 100%;
     }
@@ -17,6 +18,17 @@
       outline: none;
       border: 0;
       border-bottom: 1rem solid $white;
+    }
+    .button-submit{
+      position: absolute;
+      top: 20rem;
+      right: 0;
+      z-index: 2;
+      width: 64rem;
+      height: 64rem;
+      background: transparent;
+      border: 0;
+      outline: none;
     }
   }
 }

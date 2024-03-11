@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+	<link rel="stylesheet" href="../static/css/slick.css">
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper page-login">
+	@@include('./includes/_header-login.html')
+	<div class="page-content">
+		<section class="login">
+			<div class="login-form">
+				<label class="label">
+					<span>Username or Email Address  *</span>
+					<input type="email" placeholder="jhondoe@gmail.com" class="input">
+				</label>
+				<label class="label">
+					<span>Password *</span>
+					<input type="password" value="password" class="input input-password">
+					<button class="showHide" type="button">hide</button>
+				</label>
+
+			</div>
+		</section>
+	</div>
+	@@include('./includes/_footer-login.html')
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+</body>
+</html>

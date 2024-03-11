@@ -6,7 +6,7 @@
                 <label class="label">
                     <input type="email" class="input" placeholder="Email address">
                 </label>
-                <button type="submit" aria-label="submit-button"><img src="" alt=""></button>
+                <button type="submit" aria-label="submit-button" class="button-submit"><img class="svg-convert" src="../static/images/svg/ic-arrow-top.svg" alt="arrow-top"></button>
             </form>
         </div>
     </div>
@@ -66,29 +66,29 @@
         </div>
     </div>
 </div>
-<div class="popup popup-registration" data-popup="registration">
+<div class="popup popup-messenger" data-popup="messengers">
     <div class="popup-wrap">
         <div class="popup-close">
-            <svg class="icon">
-                <use xlink:href="#ic-cross"></use>
-            </svg>
+            <img src="../static/images/svg/ic-close.svg" alt="ic-close" class="svg-convert">
         </div>
-        <div class="popup-title">Зареєструйся безкоштовно</div>
-        <div class="popup-subtitle">Заповніть форму нижче і наш менеджер зв'яжеться з Вами</div>
-        <form>
-            <label class="label">
-                <input class="input" type="text" name="registration-name" placeholder="Ваше ім'я">
-            </label>
-            <label class="label">
-                <input class="input" type="email" name="registration-email" placeholder="Ваш email">
-            </label>
-            <label class="label">
-                <input class="input" type="tel" name="registration-phone" placeholder="Ваш телефон">
-            </label>
-            <button type="submit" class="btn btn-black">
-                <span>Надісати</span>
-            </button>
-        </form>
+        <div class="popup-inner">
+            <img src="../static/images/general/popup-img.png" alt="popup-img">
+            <div class="popup-messenger__wrap">
+                <a href="#" class="popup-messenger__item" target="_blank">
+                    <span class="popup-messenger__media">
+                        <img src="../static/images/general/ic-instagram.svg" alt="instagram" class="svg-convert">
+                    </span>
+                    <span class="popup-messenger__title">Telegram</span>
+                </a>
+                <a href="#" class="popup-messenger__item" target="_blank">
+                    <span class="popup-messenger__media">
+                        <img src="../static/images/general/ic-discord.svg" alt="discord" class="svg-convert">
+                    </span>
+                    <span class="popup-messenger__title">Disrocd</span>
+                </a>
+            </div>
+        </div>
+
     </div>
     <div class="popup-overlay"></div>
 </div>
