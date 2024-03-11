@@ -52,6 +52,34 @@ $('.showHide').on('click', function (e) {
     }
     console.log(x.attr('type'));
 });
+$('.deals-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    variableWidth: true,
+
+    // prevArrow: $('.certificate-nav .prev'),
+    // nextArrow: $('.certificate-nav .next'),
+    responsive: [
+        // {
+        //     breakpoint: 576,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         slidesToScroll: 1,
+        //         infinite: true,
+        //     }
+        // },
+        // {
+        //     breakpoint: 767,
+        //     settings: {
+        //         slidesToShow: 2,
+        //         slidesToScroll: 1,
+        //         infinite: true,
+        //     }
+        // },
+    ]
+});
 
 // if ($('.hero-wrapper').length > 0) {
 //     $('.header').addClass('header-main');

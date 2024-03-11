@@ -1,0 +1,42 @@
+.blog{
+  padding: 104rem 0 68rem;
+  &-top{
+    padding: 136rem 0 54rem;
+    border-bottom: 1px solid $default;
+    display: flex;
+    justify-content: space-between;
+    .title-section{
+      max-width: 576rem;
+      color: $default;
+      font: $font-64-bold;
+      span{
+        font: 400 88rem / 84rem $font-family-primary;
+        color: $primary;
+      }
+    }
+    .text-section{
+      max-width: 872rem;
+      color: $gray;
+      font: $font-main-regular;
+      b{
+        margin-bottom: 24rem;
+        display: block;
+      }
+    }
+  }
+  &-wrap{}
+  &-item{
+    padding: 32rem;
+    overflow: hidden;
+    border-radius: 40rem;
+    &__title{
+      font: $font-main-bold;
+      color: $default;
+    }
+    &__date{
+      font: 400 16rem / 18rem $font-family-primary;
+      color: $default;
+    }
+    &__media{}
+  }
+}

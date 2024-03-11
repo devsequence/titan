@@ -1,4 +1,9 @@
 .header{
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 11;
   background-color: $black-100;
   padding: 24rem 0;
   .container{
