@@ -149,3 +149,70 @@
     font: 400 16rem / 24rem $font-family-primary;
   }
 }
+@media screen and (max-width: 768px){
+  .subscribe{
+    margin-bottom: 140rem;
+    &-title{
+      font: 700 16rem / 24rem $font-family-primary;
+      margin-bottom: 48rem;
+    }
+    &-form{
+      input{
+        font: 400 32rem / 42rem $font-family-primary;
+        padding-bottom: 16rem;
+      }
+      .button-submit{
+        width: 32rem;
+        height: 32rem;
+      }
+    }
+  }
+  .footer{
+    padding: 96rem 0 48rem;
+    &-logo{
+      display: block;
+      margin-bottom: 48rem;
+    }
+    &-wrap{
+      &:last-of-type{
+        margin-top: 142rem;
+      }
+    }
+    &-social{
+      ul{
+        li{
+          margin-right: 8rem;
+        }
+      }
+    }
+    &-nav{
+      text-align: center;
+      ul{
+        li{
+          margin-right: 33rem;
+          &:after{
+            right: -16rem;
+            height: 14rem;
+          }
+          &:nth-child(2){
+            &:after{
+              display: none;
+            }
+          }
+        }
+        a{
+          font: 400 14rem / 24rem $font-family-primary;
+        }
+      }
+    }
+    &-link{
+      a{
+        font: 700 14rem / 24rem $font-family-primary;
+        color: $primary;
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+  }
+}

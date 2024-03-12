@@ -30,7 +30,7 @@ body {
   height: 100%;
   font-size: calc(100vw / 1920);
   @media screen and (max-width: 768px){
-    font-size: calc(100vw / 360);
+    font-size: calc(100vw / 375);
   }
 }
 .container{
@@ -40,6 +40,10 @@ body {
   margin-right:auto;
   margin-left:auto;
   max-width: 1920rem;
+  @media screen and (max-width: 768px){
+    padding-right:16rem;
+    padding-left:16rem;
+  }
 }
 @media screen and (max-width: 1920px){}
 //@media (min-width:768px){.container{max-width:100%}}

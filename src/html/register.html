@@ -6,34 +6,34 @@
 </head>
 <body>
 <!--page-wrapper-->
-<div class="page-wrapper login-page">
+<div class="page-wrapper register-page">
 	@@include('./includes/_header-login.html')
 	<div class="page-content">
-		<section class="login">
+		<section class="register">
 			<div class="container">
-				<div class="login-form">
+				<div class="register-form">
 					<label class="label">
-						<span>Username or Email Address  <i> *</i></span>
+						<span>Username  <i> *</i></span>
 						<input type="email" placeholder="jhondoe@gmail.com" class="input">
+					</label>
+					<label class="label">
+						<span>Email <i> *</i></span>
+						<input type="text" placeholder="jhondoe@gmail.com" class="input">
 					</label>
 					<label class="label">
 						<span>Password <i> *</i></span>
 						<input type="password" value="password" class="input input-password">
 						<button class="showHide" type="button"></button>
 					</label>
-					<div class="modal-checkbox">
-						<input type="checkbox" class="input-checkbox" id="remember">
-						<label class="label-checkbox" for="remember">
-							Remember me
-						</label>
+					<button class="btn-primary" type="submit"><span class="circle"></span><span>register</span></button>
+					<div class="link">
+						Already have account
+						<a href="login.html">Log in</a>
 					</div>
-					<a href="#" class="link-secondary">Forgot  Password?</a>
-					<button class="btn-primary" type="submit"><span class="circle"></span><span>Log IN</span></button>
-					<a href="register.html" class="link-register">Don't have account?</a>
 				</div>
 			</div>
-			<div class="login-media">
-				<img src="../static/images/general/bg-login.png" alt="bg-login">
+			<div class="register-media">
+				<img src="../static/images/general/bg-login.png" alt="bg-register">
 			</div>
 		</section>
 	</div>

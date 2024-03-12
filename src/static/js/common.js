@@ -40,6 +40,14 @@ $('.popup-overlay').on('click', function (e) {
     $('.popup').removeClass('active');
     $('body').removeClass('scroll');
 });
+$('.btn-header').on('click', function (e) {
+    var $this = $(this);
+    $this.toggleClass('active');
+});
+
+setTimeout(function() {
+    $('.preload').addClass('hidden');
+}, 2000);
 
 
 $('.showHide').on('click', function (e) {

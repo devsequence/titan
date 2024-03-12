@@ -1,10 +1,332 @@
-.page-login{}
-.header-login{
-  background: $default;
-  padding: 80rem 0;
-}
-.login{
-  background: $default;
-  height: 100vh;
+.login, .register{
+  position: static;
+  &-page{
+    background: $default;
+    height: 100vh;
+    position: relative;
+  }
+  &-header{
+    background: $default;
+    padding: 80rem 0;
+  }
+  &-footer{
+    padding: 32rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .container{
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer-nav{
+      width: 100%;
+    }
+    .footer-copy{
+      text-align: right;
+      margin-top: 0;
+      color: $white;
+    }
+  }
+  &-form{
+    max-width: 412rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .label{
+      display: block;
+      position: relative;
+      width: 100%;
+      color: $white;
+      font: 400 12rem / 16rem $font-family-primary;
+      span{
+        display: block;
+        margin-bottom: 2rem;
+        i{
+          color: #FF1616;
+        }
+      }
+      &:nth-child(1){
+        margin-bottom: 40rem;
+      }
+      &:nth-child(2){
+        margin-bottom: 16rem;
+      }
+    }
+    .showHide{
+      position: absolute;
+      right: 0;
+      bottom: 5rem;
+      z-index: 2;
+      background-color: transparent;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2 12C3.6 7.903 7.336 5 12 5C16.664 5 20.4 7.903 22 12C20.4 16.097 16.664 19 12 19C7.336 19 3.6 16.097 2 12Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-size: cover;
+      width: 24rem;
+      height: 24rem;
+    }
+    .input{
+      padding: 6rem 0 8rem;
+      color: $white;
+      font: 400 16rem / 21rem $font-family-primary;
+      width: 100%;
+      outline: none;
+      background: transparent;
+      border: 0;
+      border-bottom: 1rem solid $white;
+    }
+    .btn-primary{
+      margin: 40rem 0;
+    }
+    .modal-checkbox{
+      width: 50%;
+      .label-checkbox{
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+        color: $white;
+        font: 400 12rem / 16rem $font-family-primary;
+        padding-left: 24rem;
+        &:hover{
+          color: $primary;
+        }
+        &:before,
+        &:after{
+          position: absolute;
+          content: '';
 
+        }
+        &:before{
+          left: 0;
+          top: 0;
+          width: 16rem;
+          height: 16rem;
+          border-radius: 4rem;
+          border: 1rem solid $white;
+        }
+        &:after{
+          left: 4rem;
+          top: 4rem;
+          width: 8rem;
+          height: 8rem;
+          border-radius: 2rem;
+          background: $primary;
+          opacity: 0;
+        }
+      }
+    }
+    .input-checkbox{
+      &:checked{
+        & + .label-checkbox{
+          &:after{
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .link-secondary{
+      text-align: right;
+      width: 50%;
+      color: #026A80;
+      font: 700 16rem / 21rem $font-family-primary;
+      &:hover{
+        color: $primary;
+      }
+    }
+    .link{
+      margin: 0 auto;
+      color: $white;
+      font: 700 16rem / 21rem $font-family-primary;
+      text-align: center;
+      a{
+        color: $primary;
+        font: 700 16rem / 21rem $font-family-primary;
+        &:hover{
+          color: #026A80;
+        }
+      }
+    }
+    .link-register{
+      margin: 0 auto;
+      color: $white;
+      font: 700 16rem / 21rem $font-family-primary;
+      &:hover{
+        color: $primary;
+      }
+    }
+  }
+  &-media{
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 1273rem;
+    width: 100%;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.register{
+  .register-form {
+    .label{
+      margin-bottom: 40rem;
+      &:last-of-type{
+        margin-bottom: 48rem;
+      }
+    }
+    .btn-primary{
+      margin: 0 auto 48rem;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .login, .register{
+    &-page{
+      height: auto;
+      min-height: 812rem;
+    }
+    &-header{
+      background: $default;
+      padding: 40rem 16rem;
+    }
+    &-footer{
+      padding: 24rem 0;
+      .footer-nav{
+        display: none;
+      }
+      .footer-copy{
+        text-align: center;
+      }
+    }
+    &-form{
+      max-width: 412rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .label{
+        display: block;
+        position: relative;
+        width: 100%;
+        color: $white;
+        font: 400 12rem / 16rem $font-family-primary;
+        span{
+          display: block;
+          margin-bottom: 2rem;
+          i{
+            color: #FF1616;
+          }
+        }
+        &:nth-child(1){
+          margin-bottom: 40rem;
+        }
+        &:nth-child(2){
+          margin-bottom: 16rem;
+        }
+      }
+      .showHide{
+        position: absolute;
+        right: 0;
+        bottom: 5rem;
+        z-index: 2;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2 12C3.6 7.903 7.336 5 12 5C16.664 5 20.4 7.903 22 12C20.4 16.097 16.664 19 12 19C7.336 19 3.6 16.097 2 12Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-size: cover;
+        width: 24rem;
+        height: 24rem;
+      }
+      .input{
+        padding: 6rem 0 8rem;
+        color: $white;
+        font: 400 16rem / 21rem $font-family-primary;
+        width: 100%;
+        outline: none;
+        background: transparent;
+        border: 0;
+        border-bottom: 1rem solid $white;
+      }
+      .btn-primary{
+        margin: 40rem 0;
+      }
+      .modal-checkbox{
+        width: 50%;
+        .label-checkbox{
+          position: relative;
+          width: 100%;
+          cursor: pointer;
+          color: $white;
+          font: 400 12rem / 16rem $font-family-primary;
+          padding-left: 24rem;
+          &:hover{
+            color: $primary;
+          }
+          &:before,
+          &:after{
+            position: absolute;
+            content: '';
+
+          }
+          &:before{
+            left: 0;
+            top: 0;
+            width: 16rem;
+            height: 16rem;
+            border-radius: 4rem;
+            border: 1rem solid $white;
+          }
+          &:after{
+            left: 4rem;
+            top: 4rem;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 2rem;
+            background: $primary;
+            opacity: 0;
+          }
+        }
+      }
+      .input-checkbox{
+        &:checked{
+          & + .label-checkbox{
+            &:after{
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .link-secondary{
+        text-align: right;
+        width: 50%;
+        color: #026A80;
+        font: 700 16rem / 21rem $font-family-primary;
+        &:hover{
+          color: $primary;
+        }
+      }
+      .link{
+        margin: 0 auto;
+        color: $white;
+        font: 700 16rem / 21rem $font-family-primary;
+        text-align: center;
+        a{
+          color: $primary;
+          font: 700 16rem / 21rem $font-family-primary;
+          &:hover{
+            color: #026A80;
+          }
+        }
+      }
+      .link-register{
+        margin: 0 auto;
+        color: $white;
+        font: 700 16rem / 21rem $font-family-primary;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+    &-media{
+      display: none;
+    }
+  }
 }

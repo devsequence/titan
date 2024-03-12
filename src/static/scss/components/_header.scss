@@ -127,4 +127,80 @@
       }
     }
   }
+  &-btn{
+    margin: 0 0 0 auto;
+    display: none;
+    width: 32rem;
+    height: 32rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.btn-header{
+  background: transparent;
+  outline: none;
+  width: 100%;
+  height: 19rem;
+  position: relative;
+  &:before, &:after, span{
+    position: absolute;
+    background: $white;
+    transition: all ease 300ms;
+    height: 2.65rem;
+    border-radius: 1.35rem;
+    right: 0;
+  }
+  &:before, &:after{
+    content: '';
+  }
+  span{
+    width: 26.67rem;
+    top: 50%;
+    margin-top: -1.35rem;
+  }
+  &:before{
+    top: 0;
+    width: 18.67rem;
+  }
+  &:after{
+    top: 100%;
+    width: 13.33rem;
+    margin-top: -2.65rem;
+  }
+  &.active{
+    span{
+      opacity: 0;
+      width: 0;
+    }
+    &:before,
+    &:after{
+      width: 15.33rem;
+      top: 50%;
+      margin-top: -1.35rem;
+    }
+    &:before{
+      transform: rotate(-135deg);
+    }
+    &:after{
+      transform: rotate(135deg);
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .header{
+    padding: 16rem 0;
+    &-logo{
+      a{
+        width: 126rem;
+        height: 26rem;
+      }
+    }
+    &-nav, &-info{
+      display: none;
+    }
+    &-btn{
+      display: flex;
+    }
+  }
 }

@@ -257,6 +257,16 @@ input, textarea {
     height: 45.2rem;
     position: relative;
     display: inline-block;
+    &-wrap{
+      margin: 64rem 0 0;
+      display: flex;
+      align-items: center;
+    }
+    &-title{
+      font: $font-main-bold;
+      color: $primary;
+      margin-right: 16rem;
+    }
   }
 
   .spinner.center {
