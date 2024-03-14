@@ -1436,3 +1436,19 @@ input, textarea {
     .nav-hero__slider .icon {
       width: 10.71vw;
       height: 10.71vw; } }
+
+.recognition-sect .container h2.recognition__title{
+  font-size: 42px;
+  line-height: 116%;
+  color: #122e5a;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.recognition-sect .slider_client{
+  max-width: 994px;
+  margin: 0 auto;
+}
+.recognition-sect .slider_client .slider__scrollbar{
+  display: none;
+}

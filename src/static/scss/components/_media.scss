@@ -1,1 +1,7 @@
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {
+  p {
+    font: 400 16rem / 21rem $font-family-primary;
+    margin-bottom: 31rem;
+  }
+
+}
