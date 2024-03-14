@@ -44,7 +44,7 @@ $('.btn-header').on('click', function (e) {
     var $this = $(this);
     $this.toggleClass('active');
 });
-
+$('.preload').addClass('hidden');
 setTimeout(function() {
     $('.preload').addClass('hidden');
 }, 2000);
