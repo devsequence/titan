@@ -1,0 +1,75 @@
+.text-page{
+  min-height: 100vh;
+  padding: 160rem 0 100rem;
+  color: $default;
+  .bread-crumbs{
+    margin-bottom: 64rem;
+  }
+  .title-section{
+    color: $default;
+    font: $font-64-regular;
+    margin-bottom: 48rem;
+  }
+  .text-section{
+    color: $gray;
+    padding-bottom: 72rem;
+    margin-bottom: 72rem;
+    border-bottom: 1rem solid $gray;
+
+  }
+  &__inner-item{
+    font: $font-bold-s;
+    margin-bottom: 72rem;
+    color: $gray;
+    ul{
+      li{
+        font: 400 24rem / 40rem $font-family-primary;
+        padding-left: 40rem;
+        position: relative;
+        &:before{
+          position: absolute;
+          content: '';
+          left: 5rem;
+          top: 50%;
+          margin-top: -2.5rem;
+          background: $gray;
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  &__title{
+    padding: 16rem 32rem;
+    font: $font-48;
+    color: $white;
+    background: $default;
+    margin-bottom: 32rem;
+    clip-path: polygon( 99.09% 0%,0.91% 0%,0.91% 0%,0.762% 0.22%,0.622% 0.859%,0.492% 1.88%,0.373% 3.25%,0.267% 4.933%,0.176% 6.895%,0.102% 9.102%,0.046% 11.519%,0.012% 14.11%,0% 16.842%,0% 58.221%,0% 58.221%,0.004% 59.746%,0.015% 61.247%,0.033% 62.714%,0.058% 64.14%,0.09% 65.517%,0.128% 66.836%,0.173% 68.089%,0.223% 69.269%,0.28% 70.366%,0.342% 71.373%,2.026% 96.309%,2.026% 96.309%,2.076% 96.993%,2.127% 97.611%,2.181% 98.16%,2.236% 98.641%,2.293% 99.051%,2.352% 99.389%,2.411% 99.654%,2.472% 99.846%,2.533% 99.961%,2.595% 100%,99.09% 100%,99.09% 100%,99.238% 99.78%,99.378% 99.141%,99.508% 98.12%,99.627% 96.75%,99.734% 95.067%,99.824% 93.105%,99.898% 90.898%,99.954% 88.481%,99.988% 85.89%,100% 83.158%,100% 16.842%,100% 16.842%,99.988% 14.11%,99.954% 11.519%,99.898% 9.102%,99.824% 6.895%,99.734% 4.933%,99.627% 3.25%,99.508% 1.88%,99.378% 0.859%,99.238% 0.22%,99.09% 0% );
+  }
+  &__text{
+    padding: 0 32rem;
+    color: $gray;
+  }
+  &.terms{
+    .text-page{
+      &__inner-item{
+        display: flex;
+        justify-content: space-between;
+      }
+      &__title{
+        padding: 0;
+        font: $font-48;
+        color: $default;
+        background: transparent;
+        margin-bottom: 32rem;
+        clip-path: none;
+      }
+      &__text{
+        max-width: 1168rem;
+        padding: 0;
+      }
+    }
+  }
+}

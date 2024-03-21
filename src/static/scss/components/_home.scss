@@ -340,10 +340,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    .work-link{
-      display: block;
-      width: 100%;
-    }
+
   }
   &-link{
     display: none;
@@ -352,6 +349,10 @@
     width: 100%;
     max-width: 758rem;
     position: relative;
+    .work-link{
+      display: block;
+      width: 100%;
+    }
     &-icon{
       position: absolute;
       right: -320rem;

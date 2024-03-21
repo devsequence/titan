@@ -43,6 +43,8 @@ $('.popup-overlay').on('click', function (e) {
 $('.btn-header').on('click', function (e) {
     var $this = $(this);
     $this.toggleClass('active');
+    $('.header-mobile').toggleClass('active');
+    $('body').toggleClass('is-scroll');
 });
 $('.preload').addClass('hidden');
 setTimeout(function() {
@@ -51,7 +53,6 @@ setTimeout(function() {
 
 
 $('.showHide').on('click', function (e) {
-
     var x = $(".input-password");
     if (x.attr('type') === "password") {
         x.attr("type", "text")
@@ -60,34 +61,62 @@ $('.showHide').on('click', function (e) {
     }
     console.log(x.attr('type'));
 });
-$('.deals-slider').slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: false,
-    infinite: false,
-    variableWidth: true,
 
-    // prevArrow: $('.certificate-nav .prev'),
-    // nextArrow: $('.certificate-nav .next'),
-    responsive: [
-        // {
-        //     breakpoint: 576,
-        //     settings: {
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1,
-        //         infinite: true,
-        //     }
-        // },
-        // {
-        //     breakpoint: 767,
-        //     settings: {
-        //         slidesToShow: 2,
-        //         slidesToScroll: 1,
-        //         infinite: true,
-        //     }
-        // },
-    ]
+$('.service-tab__button').on('click', function (e) {
+    var $this = $(this);
+    $this.toggleClass('active');
+    $('.service-tab__nav a, .service-tab__item').toggleClass('active');
 });
+$('.service-tab__nav a').on('click', function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    if($this.hasClass('active')){}else {
+        $('.service-tab__button').toggleClass('active');
+        $('.service-tab__nav a, .service-tab__item').toggleClass('active');
+    }
+});
+$('.faq-item__title').on('click', function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    if($this.hasClass('active')){
+        $this.removeClass('active');
+        $this.parent().removeClass('active');
+    }else {
+        $('.faq-item').removeClass('active');
+        $('.faq-item__title').removeClass('active');
+        $this.addClass('active');
+        $this.parent().addClass('active');
+    }
+});
+
+// $('.deals-slider').slick({
+//     slidesToShow: 2,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     infinite: false,
+//     variableWidth: true,
+//
+//     // prevArrow: $('.certificate-nav .prev'),
+//     // nextArrow: $('.certificate-nav .next'),
+//     responsive: [
+//         // {
+//         //     breakpoint: 576,
+//         //     settings: {
+//         //         slidesToShow: 1,
+//         //         slidesToScroll: 1,
+//         //         infinite: true,
+//         //     }
+//         // },
+//         // {
+//         //     breakpoint: 767,
+//         //     settings: {
+//         //         slidesToShow: 2,
+//         //         slidesToScroll: 1,
+//         //         infinite: true,
+//         //     }
+//         // },
+//     ]
+// });
 
 // if ($('.hero-wrapper').length > 0) {
 //     $('.header').addClass('header-main');
