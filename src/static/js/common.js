@@ -14,8 +14,16 @@ $(".btn-primary, .btn-secondary").each((function (e) {
 for(var i=10; i<100; i++){
     var htmlInner = '<span>'+i+'</span>';
     $('.preload-list li').append(htmlInner);
-
 }
+$('.hero-play-btn').on('click', function (e) {
+   e.preventDefault();
+    const t = $(this);
+    const tVideo = t.prev().attr('src');
+    $('body').addClass('scroll');
+    $('.popup-video').addClass('active').find('video').attr('src', tVideo);
+    $('.popup-video').find('video').attr('autoplay', 'true');
+});
+
 function popupOpen() {
     var $popupButton = $('.btn-popup');
     $popupButton.on('click', function (e) {
@@ -33,6 +41,8 @@ $('.popup-close').on('click', function (e) {
     $this.parent().parent().removeClass('active');
     $('.popup-overlay').removeClass('active');
     $('body').removeClass('scroll');
+    $('.popup-video').removeClass('active').find('video').attr('src', '');
+    $('.popup-video').find('video').attr('autoplay', 'false');
 });
 $('.popup-overlay').on('click', function (e) {
     var $this = $(this);
@@ -89,6 +99,35 @@ $('.faq-item__title').on('click', function (e) {
     }
 });
 
+$('.affiliate-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    variableWidth: true,
+    arrows: false,
+    // prevArrow: $('.certificate-nav .prev'),
+    // nextArrow: $('.certificate-nav .next'),
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
+            }
+        },
+        // {
+        //     breakpoint: 767,
+        //     settings: {
+        //         slidesToShow: 2,
+        //         slidesToScroll: 1,
+        //         infinite: true,
+        //     }
+        // },
+    ]
+});
 // $('.deals-slider').slick({
 //     slidesToShow: 2,
 //     slidesToScroll: 1,

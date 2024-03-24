@@ -61,6 +61,7 @@
       &__title{
         padding: 0;
         font: $font-48;
+        max-width: 500rem ;
         color: $default;
         background: transparent;
         margin-bottom: 32rem;
@@ -69,6 +70,69 @@
       &__text{
         max-width: 1168rem;
         padding: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .bread-crumbs{
+    padding: 0;
+  }
+  .text-page{
+    padding: 104rem 0 104rem;
+    .bread-crumbs{
+      margin-bottom: 48rem;
+    }
+    .title-section{
+      font: $font-64-regular-m;
+      margin-bottom: 24rem;
+
+    }
+    .text-section{
+      color: $gray;
+      padding-bottom: 40rem;
+      margin-bottom: 40rem;
+      font: 700 16rem / 24rem $font-family-primary;
+    }
+    &__inner-item{
+      font:  400 16rem / 24rem $font-family-primary;
+      margin-bottom: 24rem;
+      ul{
+        li{
+          font: 400 16rem / 28rem $font-family-primary;;
+          padding-left: 28rem;
+        }
+      }
+    }
+    &__title{
+      padding: 4rem 16rem;
+      font: $font-64-regular-m;
+      margin-bottom: 16rem;
+      clip-path: polygon( 97.668% 0%,2.332% 0%,2.332% 0%,1.954% 0.209%,1.595% 0.816%,1.261% 1.786%,0.955% 3.087%,0.683% 4.686%,0.45% 6.551%,0.26% 8.647%,0.119% 10.943%,0.031% 13.405%,0% 16%,0% 58.56%,0% 58.56%,0.01% 60.02%,0.038% 61.456%,0.086% 62.86%,0.151% 64.224%,0.234% 65.539%,0.333% 66.799%,0.449% 67.995%,0.58% 69.119%,0.726% 70.164%,0.887% 71.12%,5.586% 96.56%,5.586% 96.56%,5.713% 97.198%,5.844% 97.773%,5.981% 98.286%,6.122% 98.733%,6.267% 99.116%,6.415% 99.431%,6.566% 99.678%,6.719% 99.856%,6.875% 99.964%,7.031% 100%,97.668% 100%,97.668% 100%,98.046% 99.791%,98.405% 99.184%,98.739% 98.214%,99.045% 96.913%,99.317% 95.314%,99.55% 93.449%,99.74% 91.353%,99.881% 89.057%,99.969% 86.595%,100% 84%,100% 16%,100% 16%,99.969% 13.405%,99.881% 10.943%,99.74% 8.647%,99.55% 6.551%,99.317% 4.686%,99.045% 3.087%,98.739% 1.786%,98.405% 0.816%,98.046% 0.209%,97.668% 0% );
+      span{
+        font: 400 16rem / 24rem $font-family-primary;
+      }
+    }
+    &__text{
+      padding: 0 0;
+    }
+    &.terms{
+      .text-page{
+        &__inner-item{
+          margin-bottom: 48rem;
+          display: flex;
+          flex-direction: column;
+        }
+        &__title{
+          padding: 0;
+          font: $font-64-regular-m;
+          color: $default;
+          margin-bottom: 16rem;
+        }
+        &__text{
+          max-width: 1168rem;
+          padding: 0;
+        }
       }
     }
   }

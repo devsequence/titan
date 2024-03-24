@@ -58,8 +58,12 @@
     flex-wrap: wrap;
     column-gap: 24rem;
     align-items: flex-start;
-    margin-bottom: 215rem;
     justify-content: center;
+    max-width: 1480rem;
+    margin: 0 auto 215rem;
+  }
+  .slide{
+    padding: 0 12rem;
   }
   &-item{
     padding: 24rem;
@@ -123,4 +127,70 @@
   }
 }
 @media screen and (max-width: 768px){
+  .affiliate{
+    padding: 104rem 0 104rem;
+    .bread-crumbs{
+      margin-bottom: 48rem;
+    }
+    .title-section{
+      margin-bottom: 16rem;
+      font: $font-64-bold-m;
+    }
+    .text-section{
+      font: $font-main-bold-m;
+      margin-bottom: 40rem;
+    }
+    .faq-inner{
+      height: 325rem;
+    }
+    .faq-info{
+      max-width: 427rem;
+      margin: 0;
+    }
+    .faq-wrap{
+      min-height: auto;
+      .title-section{
+        font: $font-64-regular-m;
+        margin-bottom: 48rem;
+      }
+    }
+    &-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 24rem;
+      align-items: flex-start;
+      margin-bottom: 54rem;
+      justify-content: center;
+    }
+    .slide{
+      padding: 0;
+    }
+    &-item{
+      padding: 24rem 8rem;
+      min-height: 721rem;
+      max-width: 343rem;
+      clip-path: polygon( 0% 4.748%,0% 98.437%,0% 98.437%,0.043% 98.691%,0.168% 98.932%,0.368% 99.157%,0.636% 99.361%,0.965% 99.543%,1.35% 99.699%,1.783% 99.826%,2.257% 99.921%,2.766% 99.98%,3.303% 100%,61.679% 100%,61.679% 100%,61.934% 99.995%,62.185% 99.982%,62.432% 99.959%,62.673% 99.927%,62.908% 99.888%,63.135% 99.84%,63.354% 99.784%,63.564% 99.72%,63.763% 99.649%,63.95% 99.57%,65.671% 98.476%,65.671% 98.476%,65.868% 98.362%,66.085% 98.258%,66.32% 98.166%,66.572% 98.084%,66.838% 98.014%,67.116% 97.956%,67.405% 97.911%,67.702% 97.878%,68.006% 97.857%,68.314% 97.851%,96.697% 97.851%,96.697% 97.851%,97.234% 97.83%,97.743% 97.771%,98.217% 97.677%,98.65% 97.55%,99.035% 97.394%,99.364% 97.212%,99.632% 97.007%,99.832% 96.783%,99.957% 96.542%,100% 96.288%,100% 95.988%,100% 1.563%,100% 1.563%,99.957% 1.309%,99.832% 1.068%,99.632% 0.844%,99.364% 0.639%,99.035% 0.457%,98.65% 0.301%,98.217% 0.174%,97.743% 0.079%,97.234% 0.02%,96.697% 0%,7.708% 0%,7.708% 0%,7.605% 0.002%,7.504% 0.009%,7.405% 0.02%,7.309% 0.036%,7.216% 0.055%,7.127% 0.079%,7.044% 0.106%,6.965% 0.137%,6.893% 0.171%,6.827% 0.208%,0.22% 4.435%,0.22% 4.435%,0.181% 4.463%,0.144% 4.492%,0.112% 4.522%,0.083% 4.553%,0.058% 4.584%,0.038% 4.616%,0.022% 4.649%,0.01% 4.682%,0.002% 4.715%,0% 4.748% );
+      &__title{
+        font: $font-64-bold-m;
+        margin-bottom: 24rem;
+      }
+      &__text{
+        font: 400 14rem / 18rem $font-family-primary;
+        li{
+          font: 400 14rem / 24rem $font-family-primary;
+        }
+      }
+      &__link{
+        .btn-secondary{
+          color: $white;
+          background: $default;
+          border-color: $default;
+          &:hover{
+            color: $default;
+            background: $white;
+          }
+        }
+      }
+    }
+  }
 }
