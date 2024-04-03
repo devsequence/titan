@@ -194,3 +194,26 @@
     }
   }
 }
+@media screen and (max-width: 768px){
+   .slick-dots{
+     margin: 32rem 0;
+     display: flex;
+     column-gap: 16rem;
+     justify-content: center;
+     li{
+       width: 12rem;
+       height: 12rem;
+       border-radius: 50%;
+       background: $gray;
+       &.slick-active{
+         background: $white;
+       }
+       button{
+         opacity: 0;
+         visibility: hidden;
+         width: 0;
+         height: 0;
+       }
+     }
+   }
+}

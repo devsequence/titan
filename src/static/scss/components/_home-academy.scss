@@ -27,12 +27,16 @@
   }
   &-item{
     width: 100%;
+    margin-right: 16rem;
     max-width: 420rem;
     min-height: 667rem;
     position: relative;
     padding: 24rem 16rem;
     z-index: 1;
     clip-path: polygon( 0.117% 3.188%,0.117% 96.865%,0.117% 96.865%,0.178% 97.376%,0.353% 97.858%,0.634% 98.308%,1.009% 98.717%,1.47% 99.081%,2.006% 99.392%,2.607% 99.646%,3.263% 99.836%,3.965% 99.956%,4.703% 100%,95.376% 100%,95.376% 100%,96.124% 99.96%,96.834% 99.842%,97.497% 99.655%,98.103% 99.403%,98.642% 99.092%,99.105% 98.729%,99.482% 98.32%,99.763% 97.872%,99.939% 97.389%,100% 96.878%,100% 8.183%,100% 7.572%,100% 7.572%,99.939% 7.062%,99.763% 6.579%,99.482% 6.13%,99.105% 5.721%,98.642% 5.358%,98.103% 5.048%,97.497% 4.796%,96.834% 4.608%,96.124% 4.491%,95.376% 4.45%,72.243% 4.45%,72.243% 4.45%,71.788% 4.436%,71.34% 4.394%,70.901% 4.325%,70.475% 4.229%,70.065% 4.108%,69.674% 3.961%,69.304% 3.791%,68.958% 3.598%,68.64% 3.382%,68.351% 3.144%,0.117% 3.188%,0.117% 3.188%,0.117% 3.188%,0.178% 2.678%,0.354% 2.195%,0.635% 1.746%,1.012% 1.337%,1.475% 0.975%,2.014% 0.664%,2.62% 0.412%,3.283% 0.224%,3.993% 0.107%,4.741% 0.067%,62.721% 0.067%,62.721% 0.067%,63.075% 0.076%,63.424% 0.103%,63.767% 0.148%,64.103% 0.21%,64.43% 0.288%,64.747% 0.383%,65.053% 0.494%,65.346% 0.62%,65.624% 0.761%,65.887% 0.917%,68.351% 3.144%,0.117% 3.188% );
+    &:last-of-type{
+      margin-right: 0;
+    }
     &:before, &:after{
       position: absolute;
       content: '';
@@ -330,6 +334,11 @@
     max-width: 598.3rem;
     max-height: 554.4rem;
     z-index: -1;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   &-shadow{
     position: absolute;
@@ -406,4 +415,107 @@
   .section-link{
     text-align: center;
   }
+}
+@media screen and (max-width: 768px){
+  .program{
+    .title-section{
+      font: $font-64-regular-m;
+      span{
+        font: $font-64-bold-m;
+      }
+    }
+    .text-section{
+      font: 700 16rem/21rem Lufga;
+    }
+    &-item{
+      margin-right: 24rem;
+      max-width: 279rem;
+      height: 444rem !important;
+      &__title{
+        font: $font-64-regular-m;
+      }
+      &__meedia{
+        width: 32rem;
+        height: 32rem;
+        margin-bottom: 16rem;
+      }
+      &__accordion{
+        margin-top: 32rem;
+        .faq-item{
+          margin-bottom: 22rem;
+        }
+      }
+      &:last-of-type{
+        margin-right: 24rem;
+      }
+    }
+  }
+  .reviews{
+    padding: 64rem 0;
+    .title-section{
+      margin: 0 0 64rem;
+      font: $font-main-regular;
+      span{
+        font: $font-48;
+      }
+    }
+    &-wrap{
+      overflow: hidden;
+      margin-top: 0;
+    }
+    &-item{
+      max-width: 164rem;
+      max-height: 212rem;
+      &:after{
+        bottom: -104rem;
+        width: 140rem;
+        height: 192rem;
+      }
+    }
+  }
+  .step{
+    padding: 64rem 0;
+    &-shadow{
+      bottom: -78rem;
+      right: 0;
+      margin: 0 auto;
+      left: 0;
+      width: 338rem;
+      height: 130rem;
+      background-size: contain;
+    }
+    .title-section{
+      margin: 0 0 64rem;
+      font: $font-main-regular;
+      span{
+        font: $font-48;
+      }
+    }
+    .text-section{
+      font: $font-main-regular-m;
+      margin-bottom: 32rem;
+      span{
+        font: $font-main-bold-m;
+        margin-bottom: 16rem;
+      }
+    }
+    &-inner__wrap{
+      width: 100%;
+      overflow: auto;
+    }
+    &-wrap{
+      padding: 0 16rem;
+      width: 770rem;
+    }
+    &-item{
+      width: 164rem;
+      &__number{
+        font: $font-main-bold-m;
+      }
+      &__title{
+        font: $font-main-regular-m;
+      }
+    }
+  }
+
 }

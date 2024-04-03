@@ -128,6 +128,65 @@ $('.affiliate-slider').slick({
         // },
     ]
 });
+$('.program-wrap').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    variableWidth: true,
+    arrows: false,
+    // prevArrow: $('.certificate-nav .prev'),
+    // nextArrow: $('.certificate-nav .next'),
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
+            }
+        },
+        // {
+        //     breakpoint: 767,
+        //     settings: {
+        //         slidesToShow: 2,
+        //         slidesToScroll: 1,
+        //         infinite: true,
+        //     }
+        // },
+    ]
+});
+$('.service-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    variableWidth: true,
+    arrows: false,
+    // prevArrow: $('.certificate-nav .prev'),
+    // nextArrow: $('.certificate-nav .next'),
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
+            }
+        },
+        // {
+        //     breakpoint: 767,
+        //     settings: {
+        //         slidesToShow: 2,
+        //         slidesToScroll: 1,
+        //         infinite: true,
+        //     }
+        // },
+    ]
+});
+
 // $('.deals-slider').slick({
 //     slidesToShow: 2,
 //     slidesToScroll: 1,

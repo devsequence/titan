@@ -437,3 +437,383 @@ input, textarea {
     }
   }
 }
+.sample-page{
+  padding: 120rem 0;
+  .woocommerce{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .woocommerce-MyAccount-content{
+    width: 100%;
+    max-width: 1300rem;
+  }
+}
+.woocommerce-MyAccount-content-inner{
+  border-radius: 40rem;
+  padding: 48rem 24rem;
+  z-index: 2;
+  position: relative;
+  &:before,
+  &:after{
+    position: absolute;
+    content: '';
+    border-radius: inherit;
+  }
+  &:before{
+    background: $white;
+    top: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: -1;
+  }
+  &:after{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(45,45,45,1) 0%, rgba(198,198,198,1) 100%);
+    z-index: -2;
+  }
+}
+.woocommerce-MyAccount-navigation{
+  border-radius: 40rem;
+  padding: 48rem 16rem 32rem;
+  max-width: 428rem;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  &:before,
+  &:after{
+    position: absolute;
+    content: '';
+    border-radius: inherit;
+  }
+  &:before{
+    background: $white;
+    top: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: -1;
+  }
+  &:after{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(45,45,45,1) 0%, rgba(198,198,198,1) 100%);
+    z-index: -2;
+  }
+  li{
+    margin-bottom: 48rem;
+    &.is-active{
+      a{
+        font: 700 24rem / 24rem $font-family-primary;
+        &:hover{
+          color: $default;
+        }
+      }
+    }
+    &:last-of-type{
+      margin-bottom: 32rem;
+      a{
+        color: $gray;
+        &:hover{
+          color: $default;
+        }
+      }
+    }
+    a{
+      color: $default;
+      font: 400 24rem / 24rem $font-family-primary;
+      &:hover{
+        color: $primary;
+      }
+    }
+  }
+}
+.nav-top__info{
+  font: $font-main-regular;
+  color: $gray;
+  padding-bottom: 16rem;
+  margin-bottom: 56rem;
+  border-bottom: 1rem solid $gray;
+}
+.nav-bottom__info{
+  position: relative;
+  .wrap {
+    max-width: 396rem;
+    height: 140rem;
+    background: #F3F3F3;
+    margin: auto;
+    clip-path: polygon( 0% 13.568%,0% 86.489%,0% 86.489%,0.062% 88.686%,0.241% 90.769%,0.527% 92.709%,0.911% 94.479%,1.384% 96.052%,1.935% 97.4%,2.555% 98.497%,3.235% 99.314%,3.965% 99.824%,4.736% 100%,62.648% 100%,62.648% 100%,63.013% 99.96%,63.373% 99.841%,63.727% 99.644%,64.072% 99.373%,64.409% 99.029%,64.735% 98.614%,65.049% 98.13%,65.349% 97.579%,65.635% 96.963%,65.904% 96.284%,68.37% 86.826%,68.37% 86.826%,68.652% 85.841%,68.963% 84.946%,69.3% 84.144%,69.661% 83.44%,70.042% 82.836%,70.442% 82.335%,70.856% 81.94%,71.282% 81.654%,71.717% 81.48%,72.159% 81.421%,95.264% 81.421%,95.264% 81.421%,96.035% 81.245%,96.765% 80.735%,97.445% 79.918%,98.065% 78.822%,98.616% 77.474%,99.089% 75.901%,99.473% 74.131%,99.759% 72.19%,99.938% 70.108%,100% 67.91%,100% 65.32%,100% 35.651%,100% 35.651%,99.988% 34.755%,99.951% 33.869%,99.89% 32.998%,99.805% 32.145%,99.698% 31.315%,99.568% 30.51%,99.417% 29.735%,99.244% 28.994%,99.05% 28.29%,98.836% 27.626%,90.39% 3.404%,90.39% 3.404%,90.155% 2.779%,89.904% 2.213%,89.639% 1.708%,89.361% 1.265%,89.073% 0.885%,88.775% 0.571%,88.469% 0.324%,88.155% 0.145%,87.837% 0.037%,87.514% 0%,4.696% 0%,4.696% 0%,3.937% 0.191%,3.215% 0.714%,2.542% 1.54%,1.926% 2.644%,1.379% 3.997%,0.909% 5.574%,0.526% 7.346%,0.24% 9.287%,0.062% 11.37%,0% 13.568% );
+  }
+  &-media{
+    position: absolute;
+    z-index: 3;
+    left: 85rem;
+    bottom: 0;
+    margin: 0 auto;
+    width: 151rem;
+    height: 171rem;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .items-wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 10rem;
+    background: $primary;
+    padding: 5rem 0;
+    transform: rotate(-20deg);
+    left: -20%;
+    width: 140%;
+    top: 25%;
+  }
+  .items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    min-width: 100%;
+  }
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $default;
+    font: 700 24rem / 24rem $font-family-primary;
+  }
+  .marquee {
+    animation: scroll 20s linear infinite;
+  }
+  .reverce {
+    animation-direction: reverse;
+  }
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+}
+.woocommerce-MyAccount-navigation-link--customer-logout{
+  padding-top: 48rem;
+  border-top: 1rem solid $gray;
+}
+.woocommerce-MyAccount-content-inner{
+  .form-login{
+    .as-details{
+      .btn-secondary{
+        width: 100%;
+        max-width: 428rem;
+        padding: 23rem 4rem;
+        font: 700 16rem / 24rem Lufga;
+        border-radius: 50rem;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        color: $white;
+        border: 1rem solid $default;
+        background: $default;
+        &:hover{
+          color: $default;
+          background: $white;
+        }
+      }
+    }
+  }
+}
+.woocommerce-form-coupon-toggle{
+  display: none !important;
+}
+.checkout-page{
+  background: linear-gradient(-135deg, rgba(237,236,236,1) 0%, rgba(240,236,236,1) 100%);
+  .title-section{
+    text-align: center;
+    color: $default;
+    text-transform: capitalize;
+    margin-bottom: 80rem;
+  }
+  .checkout-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16rem;
+  }
+  .checkout-info{
+    width: 100%;
+    max-width: 872rem;
+    height: 542rem;
+    background-color: $white;
+    clip-path: polygon( 0% 13.883%,0% 95.429%,0% 95.429%,0.036% 96.173%,0.14% 96.877%,0.307% 97.534%,0.531% 98.132%,0.806% 98.665%,1.127% 99.121%,1.488% 99.491%,1.884% 99.768%,2.309% 99.94%,2.758% 100%,68.007% 100%,68.007% 100%,68.22% 99.986%,68.43% 99.946%,68.636% 99.88%,68.837% 99.788%,69.033% 99.671%,69.223% 99.531%,69.406% 99.367%,69.581% 99.181%,69.747% 98.973%,69.904% 98.743%,71.34% 95.544%,71.34% 95.544%,71.504% 95.21%,71.685% 94.907%,71.882% 94.637%,72.092% 94.398%,72.314% 94.194%,72.546% 94.024%,72.787% 93.891%,73.036% 93.794%,73.289% 93.735%,73.546% 93.715%,97.242% 93.715%,97.242% 93.715%,97.691% 93.656%,98.116% 93.483%,98.512% 93.207%,98.873% 92.836%,99.194% 92.38%,99.469% 91.848%,99.693% 91.249%,99.86% 90.593%,99.964% 89.888%,100% 89.145%,100% 88.269%,100% 4.571%,100% 4.571%,99.964% 3.827%,99.86% 3.123%,99.693% 2.466%,99.469% 1.868%,99.194% 1.335%,98.873% 0.879%,98.512% 0.509%,98.116% 0.232%,97.691% 0.06%,97.242% 0%,6.435% 0%,6.435% 0%,6.35% 0.007%,6.265% 0.027%,6.182% 0.06%,6.102% 0.105%,6.024% 0.162%,5.95% 0.23%,5.88% 0.31%,5.815% 0.4%,5.755% 0.5%,5.7% 0.609%,0.184% 12.969%,0.184% 12.969%,0.151% 13.051%,0.121% 13.135%,0.093% 13.223%,0.07% 13.313%,0.049% 13.405%,0.032% 13.498%,0.018% 13.593%,0.008% 13.689%,0.002% 13.786%,0% 13.883% );
+
+  }
+  .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1{
+    float: left;
+    width: 100%;
+  }
+  .checkout-order{
+    width: 100%;
+    max-width: 428rem;
+    height: 542rem;
+    padding: 56rem 24rem;
+    background-color: $primary;
+    clip-path: polygon( 0% 95.415%,0% 4.566%,0% 4.566%,0.062% 3.824%,0.241% 3.12%,0.527% 2.464%,0.911% 1.866%,1.384% 1.334%,1.935% 0.879%,2.555% 0.508%,3.235% 0.232%,3.965% 0.06%,4.736% 0%,62.648% 0%,62.648% 0%,63.013% 0.014%,63.373% 0.054%,63.727% 0.12%,64.072% 0.212%,64.409% 0.328%,64.735% 0.468%,65.049% 0.632%,65.349% 0.818%,65.635% 1.026%,65.904% 1.256%,68.37% 4.452%,68.37% 4.452%,68.652% 4.785%,68.963% 5.088%,69.3% 5.358%,69.661% 5.596%,70.042% 5.801%,70.442% 5.97%,70.856% 6.103%,71.282% 6.2%,71.717% 6.259%,72.159% 6.279%,95.264% 6.279%,95.264% 6.279%,96.035% 6.338%,96.765% 6.511%,97.445% 6.787%,98.065% 7.157%,98.616% 7.613%,99.089% 8.144%,99.473% 8.743%,99.759% 9.398%,99.938% 10.102%,100% 10.845%,100% 11.72%,100% 95.434%,100% 95.434%,99.938% 96.177%,99.759% 96.88%,99.473% 97.536%,99.089% 98.134%,98.616% 98.666%,98.065% 99.121%,97.445% 99.492%,96.765% 99.768%,96.035% 99.94%,95.264% 100%,4.696% 100%,4.696% 100%,3.937% 99.935%,3.215% 99.759%,2.542% 99.479%,1.926% 99.107%,1.379% 98.649%,0.909% 98.116%,0.526% 97.517%,0.24% 96.861%,0.062% 96.157%,0% 95.415% );
+    h3{
+      font: $font-main-bold;
+      color: $default;
+      width: 100%;
+      display: block;
+      padding-bottom: 16rem;
+      margin-bottom: 40rem;
+      border-bottom: 1rem solid $default;
+    }
+
+  }
+  .woocommerce table.shop_table{
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1rem solid $default;
+    color: $default;
+    border-spacing: 0;
+    outline: none;
+    td, th{
+      border-bottom: 1rem solid #fff;
+    }
+    th{
+      font: $font-main-regular-m;
+      &.product-name{
+        color: $white;
+      }
+    }
+    .cart-subtotal{
+      font: $font-main-regular-m;
+      th{
+        color: $white;
+      }
+    }
+    .order-total{
+      font: $font-main-bold;
+      th{
+        font: $font-main-bold;
+        color: $white;
+        border-bottom: 0;
+      }
+      td{
+        border-bottom: 0;
+      }
+    }
+  }
+  .order-pay{
+    width: 100%;
+    height: 526rem;
+    max-width: 1316rem;
+    background-color: $white;
+    clip-path: polygon( 0% 4.568%,0% 95.451%,0% 95.451%,0.02% 96.191%,0.078% 96.892%,0.171% 97.545%,0.296% 98.141%,0.45% 98.671%,0.629% 99.125%,0.831% 99.494%,1.052% 99.769%,1.29% 99.941%,1.54% 100%,73.87% 100%,73.87% 100%,73.989% 99.986%,74.106% 99.946%,74.221% 99.88%,74.334% 99.789%,74.443% 99.673%,74.549% 99.533%,74.651% 99.37%,74.749% 99.185%,74.842% 98.978%,74.929% 98.749%,75.731% 95.565%,75.731% 95.565%,75.823% 95.233%,75.924% 94.932%,76.034% 94.662%,76.151% 94.425%,76.275% 94.221%,76.405% 94.053%,76.54% 93.92%,76.678% 93.823%,76.82% 93.765%,76.964% 93.745%,98.46% 93.745%,98.46% 93.745%,98.71% 93.686%,98.948% 93.514%,99.169% 93.239%,99.371% 92.87%,99.55% 92.416%,99.704% 91.887%,99.829% 91.291%,99.922% 90.637%,99.98% 89.936%,100% 89.196%,100% 88.325%,100% 4.549%,100% 4.549%,99.98% 3.809%,99.922% 3.108%,99.829% 2.455%,99.704% 1.859%,99.55% 1.329%,99.371% 0.875%,99.169% 0.506%,98.948% 0.231%,98.71% 0.059%,98.46% 0%,1.527% 0%,1.527% 0%,1.28% 0.064%,1.046% 0.24%,0.827% 0.519%,0.627% 0.89%,0.448% 1.346%,0.296% 1.876%,0.171% 2.473%,0.078% 3.127%,0.02% 3.828%,0% 4.568% );
+  }
+  .woocommerce-billing-fields{
+    padding: 56rem 24rem;
+    clip-path: polygon( 0% 13.883%,0% 95.429%,0% 95.429%,0.036% 96.173%,0.14% 96.877%,0.307% 97.534%,0.531% 98.132%,0.806% 98.665%,1.127% 99.121%,1.488% 99.491%,1.884% 99.768%,2.309% 99.94%,2.758% 100%,68.007% 100%,68.007% 100%,68.22% 99.986%,68.43% 99.946%,68.636% 99.88%,68.837% 99.788%,69.033% 99.671%,69.223% 99.531%,69.406% 99.367%,69.581% 99.181%,69.747% 98.973%,69.904% 98.743%,71.34% 95.544%,71.34% 95.544%,71.504% 95.21%,71.685% 94.907%,71.882% 94.637%,72.092% 94.398%,72.314% 94.194%,72.546% 94.024%,72.787% 93.891%,73.036% 93.794%,73.289% 93.735%,73.546% 93.715%,97.242% 93.715%,97.242% 93.715%,97.691% 93.656%,98.116% 93.483%,98.512% 93.207%,98.873% 92.836%,99.194% 92.38%,99.469% 91.848%,99.693% 91.249%,99.86% 90.593%,99.964% 89.888%,100% 89.145%,100% 88.269%,100% 4.571%,100% 4.571%,99.964% 3.827%,99.86% 3.123%,99.693% 2.466%,99.469% 1.868%,99.194% 1.335%,98.873% 0.879%,98.512% 0.509%,98.116% 0.232%,97.691% 0.06%,97.242% 0%,6.435% 0%,6.435% 0%,6.35% 0.007%,6.265% 0.027%,6.182% 0.06%,6.102% 0.105%,6.024% 0.162%,5.95% 0.23%,5.88% 0.31%,5.815% 0.4%,5.755% 0.5%,5.7% 0.609%,0.184% 12.969%,0.184% 12.969%,0.151% 13.051%,0.121% 13.135%,0.093% 13.223%,0.07% 13.313%,0.049% 13.405%,0.032% 13.498%,0.018% 13.593%,0.008% 13.689%,0.002% 13.786%,0% 13.883% );
+    h3{
+      font: $font-main-bold;
+      color: $default;
+      width: 100%;
+      display: block;
+      padding-bottom: 16rem;
+      margin-bottom: 40rem;
+      border-bottom: 1rem solid $default;
+    }
+  }
+  .woocommerce-billing-fields__field-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p{
+      width: calc(50% - 20rem);
+      span{
+        display: block;
+        font: 400 12rem / 16rem $font-family-primary;
+      }
+      &.form-row-first{
+        width: calc(50% - 20rem);
+      }
+      &.form-row-last{
+        width: calc(50% - 20rem);
+      }
+      &.form-row-wide{
+        width: calc(100% - 20rem);
+      }
+    }
+  }
+
+  label{
+    display: block;
+    position: relative;
+    width: 100%;
+    color: $default;
+    font: 400 12rem / 16rem $font-family-primary;
+    span{
+      display: block;
+      margin-bottom: 2rem;
+      i{
+        color: #FF1616;
+      }
+    }
+  }
+  input, select{
+    padding: 6rem 0 8rem;
+    color: $default;
+    font: 400 16rem / 21rem $font-family-primary;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: 0;
+    border-bottom: 1rem solid $default;
+  }
+}
+.edit-account{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  p{
+    width: calc(33.333% - 20rem);
+    span{
+      display: block;
+      font: 400 12rem / 16rem $font-family-primary;
+    }
+  }
+  label{
+    display: block;
+    position: relative;
+    width: 100%;
+    color: $default;
+    font: 400 12rem / 16rem $font-family-primary;
+    span{
+      display: block;
+      margin-bottom: 2rem;
+      i{
+        color: #FF1616;
+      }
+    }
+  }
+  input{
+    padding: 6rem 0 8rem;
+    color: $default;
+    font: 400 16rem / 21rem $font-family-primary;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: 0;
+    border-bottom: 1rem solid $default;
+  }
+}
